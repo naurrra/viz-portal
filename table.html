@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Table — Company Logo</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portal.css">
+</head>
+<body class="portal">
+
+  <button class="portal-burger" type="button" data-sidebar-toggle aria-label="Buka menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+
+  <aside class="sidebar" data-sidebar>
+    <a class="sidebar-logo" href="index.html">
+      <img src="img/logo.png" alt="Company Logo">
+    </a>
+
+    <nav class="sidebar-nav" aria-label="Menu portal">
+      <a class="sidebar-link" href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 20V12M12 20V4M19 20v-5"/></svg>
+        <span>Dashboard</span>
+      </a>
+      <a class="sidebar-link is-active" href="table.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M10 9v11"/></svg>
+        <span>Table</span>
+      </a>
+      <!-- <a class="sidebar-link" href="trash.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 4h4M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg>
+        <span>Trash</span>
+      </a> -->
+    </nav>
+
+    <a class="sidebar-logout" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4M10 16l-4-4 4-4M6 12h11"/></svg>
+      <span>Sign out</span>
+    </a>
+  </aside>
+
+  <div class="portal-main">
+    <header class="topbar">
+      <h1 class="topbar-title">Overall Analytics</h1>
+      <div class="topbar-tools">
+        <div class="topbar-user">
+          <span class="topbar-name">User Name</span>
+          <span class="avatar" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <clipPath id="avatarClip"><circle cx="20" cy="20" r="20"/></clipPath>
+                <circle cx="20" cy="20" r="20" fill="#F8C9B4"/>
+                <circle cx="20" cy="16" r="6.5" fill="#3D2A22"/>
+                  <g clip-path="url(#avatarClip)">
+                    <path d="M8 34a12 12 0 0 1 24 0v10H8Z" fill="#2F5D8A"/>
+                  </g>
+                <circle cx="20" cy="18" r="5" fill="#F6B49A"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <section class="metrics">
+      <article class="metric">
+          <div class="metric-head">
+            <div>
+              <p class="metric-label">Traffic</p>
+              <p class="metric-value">350,977</p>
+            </div>
+            <span class="metric-badge metric-badge--pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M6 18v-5M12 18V7M18 18v-8"/>
+</svg>
+            </span>
+          </div>
+          <p class="metric-foot">
+            <span class="metric-delta">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2M2.5 5.5 6 2l3.5 3.5"/></svg>
+              3.48%
+            </span>
+            <span>Since Last Month</span>
+          </p>
+        </article>
+      <article class="metric">
+          <div class="metric-head">
+            <div>
+              <p class="metric-label">New Users</p>
+              <p class="metric-value">1,925</p>
+            </div>
+            <span class="metric-badge metric-badge--amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <circle cx="9" cy="9" r="3"/><circle cx="17" cy="10" r="2.2"/>
+    <path d="M3.5 18a5.5 5.5 0 0 1 11 0M16.5 18a4.5 4.5 0 0 1 4 0"/>
+</svg>
+            </span>
+          </div>
+          <p class="metric-foot">
+            <span class="metric-delta">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2M2.5 5.5 6 2l3.5 3.5"/></svg>
+              3.48%
+            </span>
+            <span>Since Last Month</span>
+          </p>
+        </article>
+      <article class="metric">
+          <div class="metric-head">
+            <div>
+              <p class="metric-label">Sales</p>
+              <p class="metric-value">3,123</p>
+            </div>
+            <span class="metric-badge metric-badge--orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M12 3a9 9 0 1 0 9 9h-9V3Z" fill="currentColor" stroke="none"/>
+    <path d="M14.5 3.6A9 9 0 0 1 20.4 9.5h-5.9V3.6Z" fill="currentColor" stroke="none" opacity=".55"/>
+</svg>
+            </span>
+          </div>
+          <p class="metric-foot">
+            <span class="metric-delta">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2M2.5 5.5 6 2l3.5 3.5"/></svg>
+              3.48%
+            </span>
+            <span>Since Last Month</span>
+          </p>
+        </article>
+      <article class="metric">
+          <div class="metric-head">
+            <div>
+              <p class="metric-label">Performance</p>
+              <p class="metric-value">49,65%</p>
+            </div>
+            <span class="metric-badge metric-badge--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M18 6 6 18"/><circle cx="7.5" cy="7.5" r="2"/><circle cx="16.5" cy="16.5" r="2"/>
+</svg>
+            </span>
+          </div>
+          <p class="metric-foot">
+            <span class="metric-delta">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2M2.5 5.5 6 2l3.5 3.5"/></svg>
+              3.48%
+            </span>
+            <span>Since Last Month</span>
+          </p>
+        </article>
+    </section>
+
+    <main class="portal-content">
+<article class="panel">
+  <header class="panel-head">
+    <div>
+      <h2>Dataset List</h2>
+      <p class="panel-sub">Dataset Used in Dashboards</p>
+    </div>
+    <span class="panel-chip" id="rowCount">9 rows</span>
+  </header>
+
+  <div class="table-filters">
+    <div class="field">
+      <label for="dashboardFilter">Dashboard</label>
+      <select id="dashboardFilter">
+        <option value="all">All dashboards</option>
+        <option value="Overview">Overview</option>
+        <option value="Campaign">Campaign</option>
+        <option value="Landing Page">Landing Page</option>
+      </select>
+    </div>
+    <div class="field field--date">
+      <label for="dateFrom">Last updated</label>
+      <div class="date-range">
+        <input type="date" id="dateFrom">
+        <span>to</span>
+        <input type="date" id="dateTo">
+      </div>
+    </div>
+    <button class="reset-btn" id="resetFilters" type="button">Reset filters</button>
+  </div>
+
+  <div class="table-scroll">
+    <table class="table" id="datasetTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Dataset</th>
+          <th>Dashboard</th>
+          <th>Source</th>
+          <th>Last updated</th>
+          <th class="table-num">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+          <tr data-dashboard="Overview" data-date="2026-09-01">
+            <td class="table-id">DS-001</td>
+            <td>Page Views Log</td>
+            <td>Overview</td>
+            <td>
+              <span class="tag tag--cloud">Cloud</span>
+            </td>
+            <td>01 Sep 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Page Views Log">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Page Views Log">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr data-dashboard="Overview" data-date="2026-09-03">
+            <td class="table-id">DS-002</td>
+            <td>Traffic Sources</td>
+            <td>Overview</td>
+            <td>
+              <span class="tag tag--postgres">Postgres</span>
+            </td>
+            <td>03 Sep 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Traffic Sources">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Traffic Sources">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr data-dashboard="Overview" data-date="2026-08-20">
+            <td class="table-id">DS-003</td>
+            <td>Bounce Rate Summary</td>
+            <td>Overview</td>
+            <td>
+              <span class="tag tag--postgres">Postgres</span>
+            </td>
+            <td>20 Aug 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Bounce Rate Summary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Bounce Rate Summary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr data-dashboard="Campaign" data-date="2026-09-05">
+            <td class="table-id">DS-004</td>
+            <td>Campaign Clicks</td>
+            <td>Campaign</td>
+            <td>
+              <span class="tag tag--cloud">Cloud</span>
+            </td>
+            <td>05 Sep 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Campaign Clicks">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Campaign Clicks">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr data-dashboard="Campaign" data-date="2026-08-28">
+            <td class="table-id">DS-005</td>
+            <td>Campaign Spend</td>
+            <td>Campaign</td>
+            <td>
+              <span class="tag tag--cloud">Cloud</span>
+            </td>
+            <td>28 Aug 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Campaign Spend">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Campaign Spend">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr data-dashboard="Campaign" data-date="2026-09-02">
+            <td class="table-id">DS-006</td>
+            <td>Social Referrals</td>
+            <td>Campaign</td>
+            <td>
+              <span class="tag tag--postgres">Postgres</span>
+            </td>
+            <td>02 Sep 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Social Referrals">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Social Referrals">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr data-dashboard="Landing Page" data-date="2026-09-04">
+            <td class="table-id">DS-007</td>
+            <td>Landing Page Sessions</td>
+            <td>Landing Page</td>
+            <td>
+              <span class="tag tag--cloud">Cloud</span>
+            </td>
+            <td>04 Sep 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Landing Page Sessions">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Landing Page Sessions">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr data-dashboard="Landing Page" data-date="2026-09-06">
+            <td class="table-id">DS-008</td>
+            <td>Conversion Events</td>
+            <td>Landing Page</td>
+            <td>
+              <span class="tag tag--postgres">Postgres</span>
+            </td>
+            <td>06 Sep 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Conversion Events">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Conversion Events">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr data-dashboard="Landing Page" data-date="2026-08-15">
+            <td class="table-id">DS-009</td>
+            <td>Form Submissions</td>
+            <td>Landing Page</td>
+            <td>
+              <span class="tag tag--postgres">Postgres</span>
+            </td>
+            <td>15 Aug 2026</td>
+            <td class="table-num">
+              <div class="row-actions">
+                <button type="button" class="icon-btn" aria-label="Edit Form Submissions">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </button>
+                <button type="button" class="icon-btn icon-btn--danger" aria-label="Delete Form Submissions">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    <p class="empty-state" id="emptyState" style="display:none;">No dataset matches the selected filters.</p>
+  </div>
+</article>
+
+<script>
+  (function () {
+    var dashboardFilter = document.getElementById("dashboardFilter");
+    var dateFrom = document.getElementById("dateFrom");
+    var dateTo = document.getElementById("dateTo");
+    var resetBtn = document.getElementById("resetFilters");
+    var tableBody = document.getElementById("tableBody");
+    var emptyState = document.getElementById("emptyState");
+    var rowCount = document.getElementById("rowCount");
+    var rows = Array.prototype.slice.call(tableBody.querySelectorAll("tr"));
+
+    function applyFilters() {
+      var dash = dashboardFilter.value;
+      var from = dateFrom.value ? new Date(dateFrom.value) : null;
+      var to = dateTo.value ? new Date(dateTo.value) : null;
+      var visibleCount = 0;
+
+      rows.forEach(function (row) {
+        var rowDash = row.getAttribute("data-dashboard");
+        var rowDate = row.getAttribute("data-date") ? new Date(row.getAttribute("data-date")) : null;
+        var matches = true;
+
+        if (dash !== "all" && rowDash !== dash) matches = false;
+        if (matches && from && rowDate && rowDate < from) matches = false;
+        if (matches && to && rowDate && rowDate > to) matches = false;
+
+        row.style.display = matches ? "" : "none";
+        if (matches) visibleCount++;
+      });
+
+      rowCount.textContent = visibleCount + (visibleCount === 1 ? " row" : " rows");
+      emptyState.style.display = visibleCount === 0 ? "block" : "none";
+    }
+
+    dashboardFilter.addEventListener("change", applyFilters);
+    dateFrom.addEventListener("change", applyFilters);
+    dateTo.addEventListener("change", applyFilters);
+    resetBtn.addEventListener("click", function () {
+      dashboardFilter.value = "all";
+      dateFrom.value = "";
+      dateTo.value = "";
+      applyFilters();
+    });
+  })();
+</script>
+    </main>
+
+    <footer class="portal-footer">&copy;2024 <strong>Company Name</strong></footer>
+  </div>
+
+  <script src="js/portal.js"></script>
+
+</body>
+</html>
